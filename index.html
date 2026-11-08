@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="magnesium — interactive websites, landing pages and design-driven front-end. Selected concept studies.">
+<title>magnesium — Interactive web design</title>
+<style>
+  :root{--ink:#142130;--muted:#586879;--paper:#f5f7fa;--blue:#0f62fe;--line:#cbd5df}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+  .mark{font-weight:600;letter-spacing:.14em;font-size:15px}
+  .mark span{color:var(--blue)}
+  nav a{font-size:14px;color:var(--muted);margin-left:28px}
+  nav a:hover{color:var(--blue)}
+  .hero{padding:clamp(80px,12vw,160px) 0 clamp(60px,8vw,110px)}
+  .hero .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:28px}
+  h1{font-size:clamp(44px,7vw,96px);line-height:1.02;font-weight:400;letter-spacing:-.02em;max-width:14ch;margin:0 0 32px}
+  .hero p{font-size:clamp(17px,1.6vw,22px);color:var(--muted);max-width:52ch;margin:0}
+  .works{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:clamp(60px,8vw,110px)}
+  .work{background:var(--paper);padding:clamp(32px,4vw,56px);display:flex;flex-direction:column;min-height:340px;transition:background .25s}
+  .work:hover{background:#fff}
+  .work .idx{font-size:12px;color:var(--blue);letter-spacing:.15em;margin-bottom:auto}
+  .work h2{font-size:clamp(30px,3.4vw,46px);font-weight:500;margin:0 0 16px;letter-spacing:-.01em}
+  .work p{color:var(--muted);font-size:15px;max-width:38ch;margin:0 0 28px}
+  .work .go{font-size:14px;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:6px;align-self:flex-start}
+  .work:hover .go{color:var(--blue);border-color:var(--blue)}
+  .work .tags{font-size:12px;color:var(--muted);margin-top:14px;letter-spacing:.05em}
+  .services{border-top:1px solid var(--line);padding:clamp(50px,7vw,90px) 0;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .services h3{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:0 0 20px;font-weight:600}
+  .services li{list-style:none;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .services li:before{content:"—";color:var(--blue);margin-right:12px}
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+  footer a{color:var(--ink)}
+  footer a:hover{color:var(--blue)}
+  @media(max-width:800px){.works,.services{grid-template-columns:1fr}.work{min-height:0}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="mark" href="/">magnesium<span>.</span></a>
+  <nav><a href="#works">Works</a><a href="#services">Services</a><a href="mailto:magnesium037@outlook.com">Contact</a></nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="kicker">Interactive web design — 独立前端与交互设计</p>
+    <h1>Websites people remember scrolling.</h1>
+    <p>I design and build marketing sites, landing pages and interactive front-ends — the kind where the scroll itself is the demo. Currently taking select projects.</p>
+  </section>
+
+  <section class="works" id="works">
+    <a class="work" href="/northline/">
+      <span class="idx">01 — LANDING PAGE</span>
+      <h2>Northline</h2>
+      <p>A retreat-studio site driven entirely by scroll: parallax hero, sticky story sequence, scrubbed marquee. Single-file build, fully responsive.</p>
+      <span class="go">View study ↗</span>
+      <span class="tags">Vanilla JS · CSS scroll animation · WebP</span>
+    </a>
+    <a class="work" href="/ibm/">
+      <span class="idx">02 — CORPORATE CONCEPT</span>
+      <h2>IBM concept study</h2>
+      <p>A seven-section corporate site with a scroll-driven morphing values sequence (custom 501-frame Lottie timeline), filters, search and full accessibility fallbacks.</p>
+      <span class="go">View study ↗</span>
+      <span class="tags">Lottie · hash routing · reduced-motion · a11y</span>
+    </a>
+  </section>
+
+  <section class="services" id="services">
+    <div>
+      <h3>What I can build</h3>
+      <ul>
+        <li>Marketing sites &amp; landing pages</li>
+        <li>Scroll-driven interactive experiences</li>
+        <li>Brand-style redesign concepts</li>
+        <li>Fast, accessible, mobile-first builds</li>
+      </ul>
+    </div>
+    <div>
+      <h3>How it works</h3>
+      <ul>
+        <li>Share your brief — I reply within 24h</li>
+        <li>Concept direction before any build</li>
+        <li>Fixed quote, milestone-based delivery</li>
+        <li>Source files included, no lock-in</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 magnesium — concept studies, not affiliated with the brands shown.</span>
+  <span><a href="mailto:magnesium037@outlook.com">magnesium037@outlook.com</a></span>
+</footer>
+</body>
+</html>
